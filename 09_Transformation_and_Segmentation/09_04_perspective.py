@@ -6,7 +6,7 @@ points = 4
 pts1 = np.zeros((points,2), dtype=np.float32)
 inputs = 0
 
-img = cv.imread('images/sudoku.jpg')
+img = cv.imread('../images/sudoku.jpg')
 h,w,ch = img.shape
 
 def persp_transf():

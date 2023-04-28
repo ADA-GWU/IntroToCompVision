@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 #img = cv.imread('images/coins.png',0)
-img = cv.imread('images/lena.png',0)
+img = cv.imread('../images/lena.png',0)
 
 xx, yy = np.mgrid[0:img.shape[0], 0:img.shape[1]]
 

@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv.imread('images/rose.jpeg',0)
+img = cv.imread('../images/rose.jpeg',0)
 h,w = img.shape
 
 # cols-1 and rows-1 are the coordinate limits.

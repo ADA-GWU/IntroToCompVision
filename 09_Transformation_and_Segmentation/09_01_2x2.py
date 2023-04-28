@@ -3,7 +3,7 @@ import numpy as np
 from math import cos, sin, pi
 import matplotlib.pyplot as plt
 
-img = cv.imread('images/rose.jpeg')
+img = cv.imread('../images/rose.jpeg')
 h,w,c = img.shape
 
 # cols-1 and rows-1 are the coordinate limits.

@@ -3,7 +3,7 @@ import numpy as np
 from math import cos, sin, pi
 import matplotlib.pyplot as plt
 
-img = cv.imread('images/rose.jpeg')
+img = cv.imread('../images/rose.jpeg')
 h,w,c = img.shape
 
 T1 = np.array([[0.8, 0.0],

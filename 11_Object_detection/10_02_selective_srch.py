@@ -6,7 +6,7 @@ import cv2
 from matplotlib import pyplot as plt
 
 method = "slow" # fast/slow
-image_file = "images/human_and_dog.jpg"
+image_file = "../images/human_and_dog.jpg"
 
 image = cv2.imread(image_file)
 
