@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('demo.jpg')
+img = cv.imread('images/demo.jpg')
 img_hls = cv.cvtColor(img, cv.COLOR_BGR2HLS)
 
 h,w,ch = img.shape
@@ -14,7 +14,8 @@ print('Data loss:',np.sum(back_rgb-img)/(w*h*ch))
 # Change Hue
 img_hls0 = img_hls.copy()
 img_hls0[:,:,0] += 100
-img_hls0[:,:,0] %= 360
+# img_hls0[:,:,0] %= 360
+img_hls0[:,:,0] = img_hls0[:,:,0] % 360
 img0 = cv.cvtColor(img_hls0,cv.COLOR_HLS2BGR)
 
 # Change Lightness

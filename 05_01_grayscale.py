@@ -1,7 +1,7 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('demo.jpg')
+img = cv.imread('images/demo.jpg')
 img_gr = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
 h,w = img_gr.shape
