@@ -6,8 +6,8 @@ from matplotlib import pyplot as plt
 window_size = 40
 
 # read two input images as grayscale images
-imgL = cv2.imread('images/TsukubaR.png',0)
-imgR = cv2.imread('images/TsukubaL.png',0)
+imgL = cv2.imread('../images/TsukubaR.png',0)
+imgR = cv2.imread('../images/TsukubaL.png',0)
 
 dims = imgR.shape
 
@@ -24,7 +24,7 @@ def mouse_callback(event,x,y, flags, param):
         for i in range(window_size//2+1,dims[0]-2*window_size):
             rightBlock = imgR[i:i+window_size,y-window_size//2:y+window_size//2]
             err = ((leftBlock - rightBlock)**2).mean()
-            #err = np.corrcoef(leftBlock, leftBlock).sum()
+            #err = np.corrcoef(leftBlock, rightBlock).sum()
             if err < min_err:
                 min_err = err
                 min_i   = i

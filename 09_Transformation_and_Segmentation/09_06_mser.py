@@ -6,7 +6,8 @@ import numpy as np
 mser = cv2.MSER_create()
 
 #Your image path i-e receipt path
-img = cv2.imread('../images/receipt-abram.jpeg')
+# img = cv2.imread('../images/receipt-abram.jpeg')
+img = cv2.imread('../images/mastercard.png')
 
 
 #Convert to gray scale
